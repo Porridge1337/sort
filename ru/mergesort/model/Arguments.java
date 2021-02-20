@@ -20,7 +20,7 @@ public class Arguments {
 		 setSortMode("-a");
 		 boolean outfull = false;
 		 List <File> input = new ArrayList<File>();
-		 int j = 0; //счётчик для input
+		 int j = 0; //СЃС‡С‘С‚С‡РёРє РґР»СЏ input
 		 
 		if(args.length <= 3) 	{
 			help();			
@@ -96,12 +96,12 @@ public class Arguments {
 	
 	
 	private void help() {
-		System.out.println("-s/-i необходимо указать тип данных.\n"
-				   + "-a/-d режим сортировки необязательный, по умолчанию сортируем по возрастанию.\n"
-		 		   + "имя выходного файла, обязательное.\n"
-				   + "имена входных файлов, не менее одного.\n"
-		 		   + "файл должен быть формата .txt "
-		 		   + "пример запуска программы:\njava -jar sort.jar -s -a out.txt in.txt,\njava -jar sort.jar -s out.txt in1.txt in2.txt in3.txt,\n"
+		System.out.println("-s/-i РЅРµРѕР±С…РѕРґРёРјРѕ СѓРєР°Р·Р°С‚СЊ С‚РёРї РґР°РЅРЅС‹С….\n"
+				   + "-a/-d СЂРµР¶РёРј СЃРѕСЂС‚РёСЂРѕРІРєРё РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№, РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃРѕСЂС‚РёСЂСѓРµРј РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ.\n"
+		 		   + "РёРјСЏ РІС‹С…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°, РѕР±СЏР·Р°С‚РµР»СЊРЅРѕРµ.\n"
+				   + "РёРјРµРЅР° РІС…РѕРґРЅС‹С… С„Р°Р№Р»РѕРІ, РЅРµ РјРµРЅРµРµ РѕРґРЅРѕРіРѕ.\n"
+		 		   + "С„Р°Р№Р» РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ С„РѕСЂРјР°С‚Р° .txt "
+		 		   + "РїСЂРёРјРµСЂ Р·Р°РїСѓСЃРєР° РїСЂРѕРіСЂР°РјРјС‹:\njava -jar sort.jar -s -a out.txt in.txt,\njava -jar sort.jar -s out.txt in1.txt in2.txt in3.txt,\n"
 		 		   + "java -jar sort.jar -d -s out.txt in1.txt in2.txt");
 	}
 
