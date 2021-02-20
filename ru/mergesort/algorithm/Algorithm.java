@@ -12,8 +12,8 @@ public class Algorithm {
 	}
 
 	private int[] merge(int[] arr_1, int[] arr_2) {
-		int len_1 = arr_1.length, len_2 = arr_2.length; // длина 1-го и 2-го массива
-		int a = 0, b = 0, len = len_1 + len_2; // a, b - счетчики в массивах, len - сумма длин массивов 
+		int len_1 = arr_1.length, len_2 = arr_2.length; // РґР»РёРЅР° 1-РіРѕ Рё 2-РіРѕ РјР°СЃСЃРёРІР°
+		int a = 0, b = 0, len = len_1 + len_2; // a, b - СЃС‡РµС‚С‡РёРєРё РІ РјР°СЃСЃРёРІР°С…, len - СЃСѓРјРјР° РґР»РёРЅ РјР°СЃСЃРёРІРѕРІ 
 		int[] result = new int[len]; 
 		
 		if(method.equals("-a")) {
@@ -47,7 +47,7 @@ public class Algorithm {
 	
 	public  int[] sortMerge(int[] arr) {
 		int len = arr.length;
-		if (len < 2) return arr; // если в массиве один эллемент то он считается уже отсортированным
+		if (len < 2) return arr; // РµСЃР»Рё РІ РјР°СЃСЃРёРІРµ РѕРґРёРЅ СЌР»Р»РµРјРµРЅС‚ С‚Рѕ РѕРЅ СЃС‡РёС‚Р°РµС‚СЃСЏ СѓР¶Рµ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Рј
 		int middle = len / 2;
 		return merge(sortMerge(Arrays.copyOfRange(arr, 0, middle)),
 		             sortMerge(Arrays.copyOfRange(arr, middle, len)));
