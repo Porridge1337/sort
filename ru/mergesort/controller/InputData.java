@@ -15,11 +15,11 @@ public class InputData {
 	
 	public int [] inputFileContent (File[] input, String datatype) {
 		
-		if(datatype.equals("-i")) { // запись int
+		if(datatype.equals("-i")) { // Р·Р°РїРёСЃСЊ int
 			
 		List<String> nums = new ArrayList<String>();
 		BufferedReader br;
-		int j = 0; //счётчик
+		int j = 0; //СЃС‡С‘С‚С‡РёРє
 		
 		try {
 		for(int i = 0; i<input.length; i++) {
@@ -36,17 +36,17 @@ public class InputData {
 		}
 			return result;
 		} catch (Exception e) {
-			System.out.println("Неправильно указанный тип данных " + datatype + " когда нужен -s");
+			System.out.println("РќРµРїСЂР°РІРёР»СЊРЅРѕ СѓРєР°Р·Р°РЅРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С… " + datatype + " РєРѕРіРґР° РЅСѓР¶РµРЅ -s");
 			 System.exit(0);
 			}
 		
 			
 		
-		}else if(datatype.equals("-s")) { // запись char
+		}else if(datatype.equals("-s")) { // Р·Р°РїРёСЃСЊ char
 			
 			List<Integer> chars = new ArrayList<Integer>();			
 			BufferedReader br;
-			int j = 0; //счётчик
+			int j = 0; //СЃС‡С‘С‚С‡РёРє
 			
 			try {
 			for(int i = 0; i<input.length; i++) {
@@ -69,7 +69,7 @@ public class InputData {
 			
 			return result;
 			} catch (IOException e) {
-				System.out.println("Неправильно указанный тип данных");
+				System.out.println("РќРµРїСЂР°РІРёР»СЊРЅРѕ СѓРєР°Р·Р°РЅРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С…");
 				 System.exit(0);
 				}											
 		} 
