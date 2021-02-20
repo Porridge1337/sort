@@ -16,12 +16,12 @@ public class MainController {
 			int [] nums = input.inputFileContent(arg.getInputFiles(), arg.getTypeData());
 			nums=sm.sortMerge(nums);
 			new OutputData(nums, arg.getOutFile(), arg.getTypeData());
-			System.out.println("Успешноу выполнение сортировки");
+			System.out.println("РЈСЃРїРµС€РЅРѕСѓ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё");
 		}else if(arg.getTypeData().equals("-s")) {
 			int [] chars = input.inputFileContent(arg.getInputFiles(), arg.getTypeData());
 			chars = sm.sortMerge(chars);
 			new OutputData(chars, arg.getOutFile(), arg.getTypeData());
-			System.out.println("Успешноу выполнение сортировки");
+			System.out.println("РЈСЃРїРµС€РЅРѕСѓ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё");
 		}
 		
 		
