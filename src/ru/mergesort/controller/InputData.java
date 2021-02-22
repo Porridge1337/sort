@@ -30,12 +30,10 @@ public class InputData {
 				while((s = br.readLine())!=null) {	
 					nums.add(s);				
 				}	
-			}
-		
+			}		
 		} catch (IOException e) {
 				e.printStackTrace();
-			}
-							
+			}							
 		return nums;
 	}
 	

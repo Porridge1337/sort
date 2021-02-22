@@ -8,7 +8,7 @@ public class MainController {
 
 	public static void main (String[] args) {
 		
-		if(args == null) {
+		if(args.length == 0 ) {
 			System.out.println("Не указаны аргументы");
 			System.exit(0);
 		}

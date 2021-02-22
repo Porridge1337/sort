@@ -14,8 +14,7 @@ public class Arguments {
 	
 	public Arguments() {
 		
-	}
-	
+	}	
 	public Arguments(String [] args){		 		
 		if(tryGetFirstArg(args[0]) && tryGetSecondArg(args[1])){
 			getFilesArgs(args);
@@ -23,12 +22,11 @@ public class Arguments {
 			showHelp();				
 		}
 			
-		if(!checkFiles()){
+		if(!checkFiles() || !checkExistFiles(inputFiles,outFile)){
 			showHelp();			
 		}			
 	}	
-	
-	
+		
 	private boolean tryGetFirstArg(String arg){		
 		if(arg.equals("-s") || arg.equals("-i")){
 			setTypeData(arg);
@@ -69,6 +67,17 @@ public class Arguments {
 	
 	private boolean checkFiles() { // проверяет есть ли Output file и хотя бы один input file
 		return (outfull && inputFiles != null && inputFiles.length > 0);
+	}
+	
+	private boolean checkExistFiles(File[] input, File output) {//проверяет есть ли файлы в принципе 
+		for(File i:input) {
+			if (!i.exists()) {
+				return false;
+			}else if(!output.exists()) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	public String getSortMode() {
