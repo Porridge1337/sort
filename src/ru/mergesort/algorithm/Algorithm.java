@@ -42,8 +42,7 @@ public class Algorithm {
 		}
 		return result;		
 	}
-	
-	
+		
 	public  int[] sortMerge(int[] arr) {
 		int len = arr.length;
 		if (len < 2) return arr; // если в массиве один эллемент то он считается уже отсортированным
