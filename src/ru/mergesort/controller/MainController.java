@@ -21,23 +21,7 @@ public class MainController {
 		nums=sm.sortMerge(nums);
 		
 		new OutputData(nums, arg.getOutFile(), arg.getTypeData());
-		System.out.println("Успешное выполнение сортировки");
-		
-		/*if(arg.getTypeData().equals("-i")) {
-			//int [] nums = input.inputFileContent(arg.getInputFiles(), arg.getTypeData());
-			int [] nums = input.getResult();
-			nums=sm.sortMerge(nums);
-			new OutputData(nums, arg.getOutFile(), arg.getTypeData());
-			System.out.println("Успешноу выполнение сортировки");
-		}else if(arg.getTypeData().equals("-s")) {
-			int [] chars = input.inputFileContent(arg.getInputFiles(), arg.getTypeData());
-			chars = sm.sortMerge(chars);
-			new OutputData(chars, arg.getOutFile(), arg.getTypeData());
-			System.out.println("Успешноу выполнение сортировки");
-		}*/
-		
-		
-			
+		System.out.println("Успешное выполнение сортировки");										
 	}
 	
 }

@@ -18,9 +18,7 @@ public class InputData {
 	public InputData(File[] input, String datatype) {
 		getValues(fillUp(input), datatype);
 	}
-	
-	
-	
+			
 	private  List <String> fillUp (File [] file) {
 		List<String> nums = new ArrayList<String>();
 		
