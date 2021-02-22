@@ -50,9 +50,9 @@ public class Arguments {
 	private void getFilesArgs(String args[])
 	{
 		List <File> input = new ArrayList<File>();
-		 int j = 0; //счётчик для input
+		 int j = 0; //СЃС‡С‘С‚С‡РёРє РґР»СЏ input
 		
-		for(int i = 2; i<args.length; i++) { // i=2 т.к. 1-й и 2-й эллемент уже проверен
+		for(int i = 2; i<args.length; i++) { // i=2 С‚.Рє. 1-Р№ Рё 2-Р№ СЌР»Р»РµРјРµРЅС‚ СѓР¶Рµ РїСЂРѕРІРµСЂРµРЅ
 			if(args[i].endsWith(".txt")) {				
 				if(!outfull) {
 					outfull=true;
@@ -64,10 +64,10 @@ public class Arguments {
 				showHelp();
 			}				
 		}	
-		inputFiles = input.toArray(new File[0]); // в параметр указывается тип возвращаемых данных
+		inputFiles = input.toArray(new File[0]); // РІ РїР°СЂР°РјРµС‚СЂ СѓРєР°Р·С‹РІР°РµС‚СЃСЏ С‚РёРї РІРѕР·РІСЂР°С‰Р°РµРјС‹С… РґР°РЅРЅС‹С…
 	}
 	
-	private boolean checkFiles() { // проверяет есть ли Output file и хотя бы один input file
+	private boolean checkFiles() { // РїСЂРѕРІРµСЂСЏРµС‚ РµСЃС‚СЊ Р»Рё Output file Рё С…РѕС‚СЏ Р±С‹ РѕРґРёРЅ input file
 		return (outfull && inputFiles != null && inputFiles.length > 0);
 	}
 	
@@ -104,12 +104,12 @@ public class Arguments {
 	}	
 		
 	private void showHelp() {
-		System.out.println("-s/-i необходимо указать тип данных.\n"
-				   + "-a/-d режим сортировки необязательный, по умолчанию сортируем по возрастанию.\n"
-		 		   + "имя выходного файла, обязательное.\n"
-				   + "имена входных файлов, не менее одного.\n"
-		 		   + "файл должен быть формата .txt "
-		 		   + "пример запуска программы:\njava -jar sort.jar -s -a out.txt in.txt,\njava -jar sort.jar -s out.txt in1.txt in2.txt in3.txt,\n"
+		System.out.println("-s/-i РЅРµРѕР±С…РѕРґРёРјРѕ СѓРєР°Р·Р°С‚СЊ С‚РёРї РґР°РЅРЅС‹С….\n"
+				   + "-a/-d СЂРµР¶РёРј СЃРѕСЂС‚РёСЂРѕРІРєРё РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№, РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃРѕСЂС‚РёСЂСѓРµРј РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ.\n"
+		 		   + "РёРјСЏ РІС‹С…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°, РѕР±СЏР·Р°С‚РµР»СЊРЅРѕРµ.\n"
+				   + "РёРјРµРЅР° РІС…РѕРґРЅС‹С… С„Р°Р№Р»РѕРІ, РЅРµ РјРµРЅРµРµ РѕРґРЅРѕРіРѕ.\n"
+		 		   + "С„Р°Р№Р» РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ С„РѕСЂРјР°С‚Р° .txt "
+		 		   + "РїСЂРёРјРµСЂ Р·Р°РїСѓСЃРєР° РїСЂРѕРіСЂР°РјРјС‹:\njava -jar sort.jar -s -a out.txt in.txt,\njava -jar sort.jar -s out.txt in1.txt in2.txt in3.txt,\n"
 		 		   + "java -jar sort.jar -d -s out.txt in1.txt in2.txt");
 		
 		System.exit(0);

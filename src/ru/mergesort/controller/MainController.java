@@ -9,7 +9,7 @@ public class MainController {
 	public static void main (String[] args) {
 		
 		if(args == null) {
-			System.out.println("Не указаны аргументы");
+			System.out.println("РќРµ СѓРєР°Р·Р°РЅС‹ Р°СЂРіСѓРјРµРЅС‚С‹");
 			System.exit(0);
 		}
 		
@@ -21,7 +21,7 @@ public class MainController {
 		nums=sm.sortMerge(nums);
 		
 		new OutputData(nums, arg.getOutFile(), arg.getTypeData());
-		System.out.println("Успешное выполнение сортировки");										
+		System.out.println("РЈСЃРїРµС€РЅРѕРµ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё");										
 	}
 	
 }
