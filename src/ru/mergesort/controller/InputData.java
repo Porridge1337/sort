@@ -44,13 +44,13 @@ public class InputData {
 			for(int i = 0; i<result.length;i++) {
 				if(type.equals("-i")) {
 					if(Character.isLetter(nums.get(i).charAt(0))) {
-						System.out.println("Îøèáêà. Âõîäíûå äàííûå íå ÿâëÿþòñÿ òèïîì integer");
+						System.out.println("ÐžÑˆÐ¸Ð±ÐºÐ°. Ð’Ñ…Ð¾Ð´Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð½Ðµ ÑÐ²Ð»ÑÑŽÑ‚ÑÑ Ñ‚Ð¸Ð¿Ð¾Ð¼ integer");
 						System.exit(0);
 					}
 					result[i]=Integer.parseInt(nums.get(i));
 				}else {
 					if(Character.isDigit(nums.get(i).charAt(0))){
-					System.out.println("Îøèáêà. Âõîäíûå äàííûå íå ÿâëÿþòñÿ òèïîì string");
+					System.out.println("ÐžÑˆÐ¸Ð±ÐºÐ°. Ð’Ñ…Ð¾Ð´Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð½Ðµ ÑÐ²Ð»ÑÑŽÑ‚ÑÑ Ñ‚Ð¸Ð¿Ð¾Ð¼ string");
 					System.exit(0);
 				}else if(Character.isLetter(nums.get(i).charAt(0))) {
 					result[i]=(( nums.get(i).charAt(0)));
